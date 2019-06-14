@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            *{
+                text-decoration: none;
+                padding: 0;
+                margin: 0;
+
+            }
+            .fl{
+                float: left;
+            }
+            .fr{
+                float: right;
+            }
+            .head{
+                height: 100px;
+                width: 1000px;
+                margin: 0 auto;
+                background: #fff;
+            }
+            .logo{
+                width: 300px;
+                height: 100px;
+                float: left;
+            }
+            input{
+                width: 228px;
+                height: 28px;
+                color: #878787;
+                float: right;
+                margin-top: 38px;
+                background: #f1f1f1;
+            }
+            .search{
+                background-image: url("images/search.jpg");
+                background-repeat:no-repeat ;
+                background-position: right;
+                border: none;
+            }
+            .nav{
+                width: 1000px;
+                height: 60px;
+                background: #313131;
+                margin: 0 auto;
+            }
+            .nav ul{
+                padding-left: 20px;
+            }
+            .nav ul li {
+                width: 121px;
+                height: 60px;
+                float: left;
+                line-height: 60px;
+                color: #fff;
+                text-align: center;
+                list-style: none;
+                border-right: 1px solid gray;
+            }
+            .nav ul li a{
+                color: #fff;
+                text-align: center;
+
+            }
+            .red a:hover{
+                display: block;
+                line-height: 60px;
+                width: 121px;
+                height: 60px;
+                background: #d24740;
+            }
+            .back{
+                width: 1000px;
+                height: 464px;
+                margin: 0 auto;
+                background-image: url("images/back.jpg");
+                background-repeat: no-repeat;
+            }
+            .back .left{
+               float: right;
+                margin-top: 415px ;
+                margin-right: 70px;
+            }
+            .back .right{
+                float: right;
+                margin-top: 415px ;
+                margin-right: -98px;
+            }
+            .back a{
+                display: block;
+                width:48px;
+                height: 48px;
+                background-image: url("images/left-01.jpg");
+                background-repeat: no-repeat;
+
+            }
+            .back .left:hover{
+                background-image: url("images/left-02.jpg");
+            }
+            .back .right{
+                display: block;
+                width:48px;
+                height: 48px;
+                background-image: url("images/right-01.jpg");
+                background-repeat: no-repeat;
+            }
+            .back .right:hover{
+                background-image: url("images/right-02.jpg");
+            }
+            .box{
+                width: 1000px;
+                margin: 0 auto;
+                /*background-color: #000;*/
+                height: 242px;
+                /*position: relative;*/
+            }
+            .new{
+                width:500px;
+                height: 242px;
+                float: left;
+                color: #878787;
+                background-image: url("images/jia.jpg");
+                background-repeat: no-repeat;
+                background-position:444px 32px;
+            }
+            .new ul li span{
+                padding-top: 4px;
+                padding-right: 20px;
+            }
+            .new ul{
+                padding-top: 5px;
+            }
+            .new ul li{
+                list-style-position:inside;
+            }
+            .new ul li a{
+                font-size: 13px;
+                height: 25px;
+                line-height: 25px;
+                color: #878787;
+            }
+            .new ul li a:hover{
+                color: #d24740;
+                text-decoration: underline;
+                
+            }
+            
+            h4{
+                margin-left: 22px;
+                color: #000;
+                height: 80px;
+                line-height: 80px;
+            }
+            .box .new ul li span{
+                font-size: 13px;
+
+            }
+            .introduce{
+                width: 240px;
+                height: 242px;
+                float: left;
+                background-color: #f1f1f1;
+            }
+            .introduce div{
+                margin-top: 20px;
+                margin-left: 25px;
+            }
+            .introduce div  a{
+                color: #575757;
+                font-size: 14px;
+            }
+            .introduce div span a{
+                color: #575757;
+                font-size: 12px;
+            }
+            .btt{
+                margin-left: 25px;
+                margin-top: 20px;
+            }
+            .btt,span{
+                color: #878787;
+                font-size: 14px;
+            }
+            .invite{
+                float: right;
+                width: 260px;
+                height: 242px;
+            }
+
+            .invite div{
+                color: #878787;
+                font-size: 12px;
+                /*padding-left: 0px; */
+            }
+            .invite {
+                background-image: url("images/input.jpg");
+                background-repeat: no-repeat;
+                background-position:20px 175px;
+            }
+            .bazaar{
+                width: 1000px;
+                height: 300px;
+                margin: 0 auto;
+            }
+            .Top{
+                width: 1000px;
+                height: 66px;
+            }
+            .Top h3{
+                margin-left: 24px;
+                line-height: 66px;
+            }
+            .Bottom{
+                width: 1000px;
+                height: 242px;
+                float: left;
+            }
+            .Bottom div{
+                width: 250px;
+                height: 242px;
+                float: left;
+            }
+            .foot{
+                width: 990px;
+                background-color: #e5e5e5;
+                height: 251px;
+                margin: 0 auto;
+            }
+            .footLeft{
+                margin-left: 20px;
+                width: 453px;
+                height: 251px;
+                float: left;
+            }
+            .foot,.footLeft,.footLeft-Top{
+                color: #626262;
+                font-size: 15px;
+                padding-top: 10px;
+                padding-left:10px;
+            }
+            hr{
+                margin-top: 10px;
+            }
+            .footLeft-Bottom{
+                width: 453px;
+                height: 194px;
+            }
+            .footLeft-Bottom ul{
+                margin-top: 10px;
+            }
+            .footLeft-Bottom ul li {
+                height: 25px;
+                line-height: 25px;
+            }
+            .footLeft-Bottom,ul,li,a{
+                color: #626262;
+                font-size: 12px;
+            }
+            .footLeft-Bottom ul li a:hover{
+                color: lightgray;
+                text-decoration: underline;
+            }
+            .footLeft-Bottom-center{
+                padding-left: 80px;
+            }
+            .footLeft-Bottom-right{
+                padding-left: 70px;
+            }
+            .footCenter{
+                padding-top: 10px;
+                padding-left:40px ;
+                width: 156px;
+                height: 251px;
+            }
+            .footCenter hr{
+                margin-top: 10px;
+            }
+            .footCenter ul{
+                margin-top: 10px;
+            }
+            .footCenter ul li{
+                height: 25px;
+                line-height: 25px;
+            }
+            .footCenter ul li a{
+                color: #626262;
+                font-size: 12px;
+            }
+            .footCenter ul li a:hover{
+                color: lightgray;
+                text-decoration: underline;
+            }
+            .footRight{
+                padding-top: 10px;
+                padding-left:40px ;
+                width: 260px;
+                height: 251px;
+            }
+            .footRight img  {
+                padding-top: 20px;
+
+            }
+            .foot ul li {
+                list-style: none;
+                list-style-image: url("images/jiantou.jpg");
+
+            }
+            .end{
+                width: 1000px;
+                height: 100px;
+                margin: 0 auto;
+            }
+
+
+            .endRight{
+                font-size: 12px;
+            }
+            .end ul{
+                padding-right: 104px;
+                height: 15px;
+                float:right ;
+            }
+            .end ul li{
+                list-style: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+<!--            头部部分-->
+        <div class="head">
+            <div class="logo"><img src="images/logo.jpg" alt="" /></div>
+            <input type="text" value="     SEARCH..." class="search">
+        </div>
+<!--        头部部分结束-->
+<!--    导航部分开始-->
+        <div class="nav">
+            <ul>
+                <li class="red"><a href="#">集团介绍</a></li>
+                <li class="red"><a href="#">产品中心</a></li>
+                <li class="red"><a href="#">卧龙市场</a></li>
+                <li class="red"><a href="#">技术研发</a></li>
+                <li><a href="#">国际合作</a></li>
+                <li><a href="#">投资者关系</a></li>
+                <li><a href="#">新闻资讯</a></li>
+                <li style="border: 0px;"><a href="#">人力资源</a></li>
+            </ul>
+        </div>
+<!--    导航部分结束-->
+<!--        主体部分开始-->
+        <div class="back">
+            <a href="#" class="left"></a>
+            <a href="#" class="right"></a>
+        </div>
+<!--    主体部分结束-->
+<!--        新闻资讯开始-->
+        <div class="box">
+            <div class="new">
+                    <h4>新闻资讯</h4>
+                    <ul>
+                        <li><a href="#">陈建成董事长出席ATB集团召开年度销售销售大会</a> <span class="fr">20191-07-30</span></li>
+                        <li><a href="#">中国电器工业协会玛丽点击分会在卧龙召开理事长...</a> <span class="fr">20191-07-30</span></li>
+                        <li><a href="#">陈建成董事长访问中国驻德大使馆</a> <span href="#" class="fr">20191-07-30</span></li>
+                        <li><a href="#">企业文化是企业持续经营的关键要素</a> <span href="#" class="fr">20191-07-30</span></li>
+                        <li><a href="#">陈建成监事长在ATB集团2013年销售会议上发表重要...</a> <span href="#" class="fr">20191-07-30</span></li>
+                        <li><a href="#">喜迎七一 唱响卧龙 年其力量激发企业持久活力 卧龙举...</a> <span href="#" class="fr">20191-07-30</span></li>
+                    </ul>
+            </div>
+            <div class="introduce">
+                <h4>卧龙介绍</h4>
+                <div><a href="#">公司成立于1984年，</a>
+                    <br>
+                <span><a href="#">经过近三十年的发展</a></span></div>
+               <p class="btt"><span style="font-size:12px;color: #878787">已成为电器制造，房地产开发和金融</span>
+                   <br>
+
+                投资散户也病句的综合性跨国...</p>
+            </div>
+            <div class="invite">
+                <h4>人才招聘</h4>
+
+                <div><p><a href="#" style="font-size:12px;color: #878787">培养一流的人才，铸造一流的工程</a><br> 实现员工与企业的共同发展</p>
+                </div>
+                <a href="#"><img src="images/three.jpg" class="fr" ></a>
+            </div>
+        </div>
+<!--    新闻资讯结束-->
+<!--        卧龙市场开始-->
+<div class="bazaar">
+            <div class="Top">
+                <h3>卧龙市场</h3>
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="Bottom">
+                <div>
+                    <p><img src="images/01.jpg" alt=""></p>
+                    <p><span style="font-size: 12px; color: #878787;">交通轨道：由于主要采用电器牵引而 <br>  且轮廓摩擦阻力较小，与公共...</span></p>
+                </div>
+                <div>
+                    <p><img src="images/02.jpg" alt=""></p>
+                    <p><span style="font-size: 12px; color: #878787;">交通轨道：由于主要采用电器牵引而 <br> 且轮廓摩擦阻力较小，与公共...</span></p>
+                </div>
+                <div>
+                    <p><img src="images/03.jpg" alt=""></p>
+                    <p><span style="font-size: 12px; color: #878787;">交通轨道：由于主要采用电器牵引而 <br> 且轮廓摩擦阻力较小，与公共...</span></p>
+                </div>
+                <div>
+                    <p><img src="images/04.jpg" alt=""></p>
+                    <p><span style="font-size: 12px; color: #878787;">交通轨道：由于主要采用电器牵引而 <br> 且轮廓摩擦阻力较小，与公共...</span></p>
+                </div>
+            </div>
+<!--        卧龙市场结束-->
+<!--            结尾开始-->
+    </div>
+    <div class="foot">
+        <div class="footLeft">
+            <div class="footLeft-Top">产品中心</div><hr>
+            <div class="footLeft-Bottom">
+                <ul class="footLeft-Bottom-left fl">
+                    <li><a href="#">汽车电机</a></li>
+                    <li><a href="#">日用电机</a></li>
+                    <li><a href="#">特种电机</a></li>
+                    <li><a href="#">大功率电机</a></li>
+                    <li><a href="#">电工设备</a></li>
+                </ul>
+                <ul class="footLeft-Bottom-center fl">
+                    <li><a href="#">工业驱动和自动化</a></li>
+                    <li><a href="#">高压变频和系统集成</a></li>
+                    <li><a href="#">混泥土搅拌机</a></li>
+                    <li><a href="#">电动车辆</a></li>
+                </ul>
+                <ul class="footLeft-Bottom-right fl">
+                    <li><a href="#">电池电源</a></li>
+                    <li><a href="#">输变电设备</a></li>
+                    <li><a href="#">楼盘信息</a></li>
+                    <li><a href="#">金融产品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footCenter fl">
+            <div class="footLeft-Top">产品研发</div><hr>
+            <ul class="footCenter-c fl">
+                <li><a href="#">科技力量</a></li>
+                <li><a href="#">先进设备</a></li>
+                <li><a href="#">研发创新</a></li>
+                <li><a href="#">工艺流程</a></li>
+            </ul>
+        </div>
+        <div class="footRight fl">
+            <div class="footLeft-Top">营销网络</div><hr>
+            <a href="#"><img src="images/china.jpg" alt=""></a>
+        </div>
+    </div>
+<!--    尾部结束-->
+
+<!--    结尾开始-->&nbsp;&nbsp;&nbsp;
+    <div class="end">
+        <span class="endLeft fl">
+            <a href="#">&nbsp;&nbsp;网站地图&nbsp;&nbsp;</a>|
+            <a href="#">&nbsp;&nbsp; 联系我们&nbsp;&nbsp;</a>|
+            <a href="#">&nbsp;&nbsp;关注卧龙&nbsp;&nbsp;</a>|
+            <a href="#">&nbsp;&nbsp;采购系统入口&nbsp;&nbsp;</a>
+        </span>
+        <span class="endRight">COPYRIGHT @2019卧龙控股集团 版权所有 浙JCP备06005901号 技术支持：博彩互动 分享到：</span><ul>
+
+        <li class="fl"><a href="#"><img src="images/weibo.jpg" alt=""></a></li>
+            <li class="fl"><a href="#"><img src="images/qqweibo.jpg" alt=""></a></li>
+            <li class="fl"><a href="#"><img src="images/doudou.jpg" alt=""></a></li>
+            <li class="fl"><a href="#"><img src="images/renren.jpg" alt=""></a></li>
+            <li class="fl"><a href="#"><img src="images/kongjian.jpg" alt=""></a></li>
+            </ul>
+
+    </div>
+    </body>
+</html>
